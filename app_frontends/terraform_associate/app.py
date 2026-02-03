@@ -44,7 +44,7 @@ def find_question_index_by_id(questions: List[Dict[str, Any]], question_id: int)
 
 def load_all_questions() -> List[Dict[str, Any]]:
     """Load and parse all Terraform Associate JSON files."""
-    base_path = Path(__file__).parent.parent / "Hashicorp"
+    base_path = Path(__file__).parent.parent.parent / "Hashicorp"
     all_questions = []
     
     # Find all Terraform Associate files

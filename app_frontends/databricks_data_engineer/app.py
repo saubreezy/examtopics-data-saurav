@@ -44,7 +44,7 @@ def find_question_index_by_id(questions: List[Dict[str, Any]], question_id: int)
 
 def load_all_questions() -> List[Dict[str, Any]]:
     """Load and parse all Databricks Data Engineer Associate JSON files."""
-    base_path = Path(__file__).parent.parent / "Databricks"
+    base_path = Path(__file__).parent.parent.parent / "Databricks"
     all_questions = []
     
     # Find all Databricks Data Engineer Associate files
